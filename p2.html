@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    <script>
+           let input = prompt("Enter input:");
+         let arrInput = input.split(' ');
+         let arrNum = arrInput.map(function(data){
+            return parseInt(data);
+         });
+        
+         let sum = prompt("sum :");
+
+        for (let i = 0; i < arrNum.length-1; i++) {
+            for (let j = i+1; j < arrNum.length; j++) {
+              if (arrNum[i]+arrNum[j]==sum) {
+                console.log(i,j);
+              }
+                
+            }
+            
+        }
+    </script>
+</body>
+</html>
